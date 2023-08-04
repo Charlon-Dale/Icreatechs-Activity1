@@ -20,8 +20,12 @@ table, th, td {
     border:1px solid black;
 }
 
-h1, h2, h3 {
+h1, h2, h3, th, article{
   color: beige;
+}
+
+a {
+  color: #ff9999;
 }
 
 li {
