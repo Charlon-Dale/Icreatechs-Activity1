@@ -6,140 +6,88 @@
     <title>HTML Forms Assignment</title>
     <link rel="stylesheet" href="assignment2.css">
 </head>
-
-    <header>
-        <h1 id="title"> Benefits of Coding to students </h1>
-    </header>
-
-    
 <body>
+    <form action="#" method="POST">
+        <h1>Login</h1>
+    </form>
+
+    <h1 id="title"> Benefits of Coding to students </h1>    
+    
     <p id="description"> Please fill up the details below. Your answer help us to achieve our goal.</p>
     
-    <form id="survey-form">
+    <form id="survey-form" action="#" method="POST">
+
+        <h1>Survey</h1>
     
         <div class="input-headings">
             
-        <label for="name" id="name-label"> Name: </label>
-        <input id="name" type="text" name="name" placeholder="Steve Jobs" class="form-inputs" required></input>
+            <label for="name" id="name-label"> 
+                <b>Name:</b>
+            </label>
+            <input id="name" type="text" name="name" placeholder="Steve Jobs" class="form-inputs" required></input>
 
-        <br>
+            <br>
 
-        <label for="email" id="email-label"> Email: </label>
-        <input id="email" type="email" name="email" placeholder="stevejobs@apple.com" class="form-inputs" required></input>
+            <label for="number" id="number-label">
+                <b>Age:</b>
+            </label>
+            <input id="number" type="number" name="number" placeholder="18" min="18" max="100" class="form-inputs" required></input>
 
-        <br>
+            
+            <br>
 
-        <label for="number" id="number-label"> Age: </label>
-        <input id="number" type="number" name="number" placeholder="18" min="18" max="100" class="form-inputs" required></input>
+            <label><b>Gender</b></label> 
+            
+            <input id="survey" type="radio" id="yes" name="answer" value="Male">
+            <label for="survey">Male</label>
 
-        <br>
+            <input id="survey" type="radio" id="no" name="answer" value="Female">
+            <label for="survey">Female</label>
 
-        <label for="dropdown" id="question"> What from these coding benefits came to you the most?</label>
-        <select id="dropdown" class="form-inputs">
-        <option value="logical">Computer programming promotes logical thinking</option>
-        <option value="creativity">Learning to code helps a students’ creativity</option>
-        <option value="persistence">When students learn to code they develop persistence</option>
-        <option value="resilience">Coding helps to develop resilience</option>
-        <option value="communication">Learning to code can improve a student’s communication skills</option>
-        <option value="structural">Students improve their structural thinking when learning to code</option>
-        <option value="problem-solving">Coding helps students with problem-solving</option>
-        <option value="math">Coding improves students’ math skills</option>
-        <option value="satisfaction">Coding gives students’ satisfaction</option>
-        <option value="learn">Coding helps students learn to learn</option>
-        <option value="others">Other benefits</option>  
-        </select>
+            <input id="survey" type="radio" id="no" name="answer" value="Confidential">
+            <label for="survey">Not to mention</label>
 
-        <br><br>
+            <br><br>
 
-        <label for="survey" id="survey"><b>Are you a graduate of any course that has a coding course?  (BSIT/BSCS/BSCpE/BSIS)</b></label> 
+            <label for="programming language"><b>Which Programming Language do you know?</b> 
+                <br>
+                <input id="checkbox" type="checkbox" name="python" value="create"> Python</label>
+                <br>
+                <input id="checkbox" type="checkbox" name="java" value="create"> Java</label>
+                <br>
+                <input id="checkbox" type="checkbox" name="js" value="create"> JavaScript</label>
+                <br>
+                <input id="checkbox" type="checkbox" name="c#" value="create"> C#</label>
+                <br>
+                <input id="checkbox" type="checkbox" name="c++" value="create"> C++</label>
+                <br>
+                <input id="checkbox" type="checkbox" name="r" value="create"> R</label>
+                <br>
+                <input id="checkbox" type="checkbox" name="c" value="create"> C</label>
+                <br>
+                <input id="checkbox" type="checkbox" name="go" value="create"> Go</label>
+                <br>
+                <input id="checkbox" type="checkbox" name="perl" value="create">  Perl</label>
+                <br>
+                <input id="checkbox" type="checkbox" name="php" value="create">  PHP</label>
+                <br><br>
+            </label>
 
-        <br>
+        
+            <label id="textarea">Comments</label>
 
-        <input id="survey" type="radio" id="yes" name="answer" value="yes">
-        <label for="survey">Yes</label>
-
-        <input id="survey" type="radio" id="no" name="answer" value="no">
-        <label for="survey">No</label>
-
-        <br><br>
-
-        <label for="survey" id="survey"><b>Have you created (small/large) projects through your coding journey?</b></label> 
-
-        <br>
-
-        <input id="survey" type="radio" id="yes" name="answer" value="yes">
-        <label for="survey">Yes</label>
-
-        <input id="survey" type="radio" id="no" name="answer" value="no">
-        <label for="survey">No</label>
-
-        <br><br>
-
-        <label for="survey" id="survey"><b>Did you even apply for some interships? Part-time jobs that relates to coding?</b></label> 
-
-        <br>
-
-        <input id="survey" type="radio" id="yes" name="answer" value="yes">
-        <label for="survey">Yes</label>
-
-        <input id="survey" type="radio" id="no" name="answer" value="no">
-        <label for="survey">No</label>
-
-        <br><br>
-
-        <label for="survey" id="survey"><b>Did you experience contributing to some open-source software/websites?</b></label> 
-
-        <br>
-
-        <input id="survey" type="radio" id="yes" name="answer" value="yes">
-        <label for="survey">Yes</label>
-
-        <input id="survey" type="radio" id="no" name="answer" value="no">
-        <label for="survey">No</label> 
-
-        <br><br>
-
-        <label for="experience"><b>From your exeperience as a programmer, what have you done or attain to your coding journey?</b> </label>
-
-        <br>
-
-        <input id="checkbox" type="checkbox" name="exeperience" value="create"> Created projects(Websites/Softwares/Apps)</label>
-
-        <br>
-
-        <input id="checkbox" type="checkbox" name="exeperience" value="create"> Landed a job</label>
-
-        <br>
-        <input id="checkbox" type="checkbox" name="exeperience" value="create"> Worked as freelancer</label>
-
-        <br>
-
-        <input id="checkbox" type="checkbox" name="exeperience" value="create"> Have worked remotely for some projects</label>
-
-        <br>
-
-        <input id="checkbox" type="checkbox" name="exeperience" value="create"> Solved different coding challeges</label>
-
-        <br>
-
-        <input id="checkbox" type="checkbox" name="exeperience" value="create"> Joined some programming competitions</label>
-
-        <br>
-
-        <input id="checkbox" type="checkbox" name="exeperience" value="create"> Others</label>
-
-        <br>
-
-        <label id="textarea">Feedback</label>
-
-        <br>
-
-        <textarea id="textarea" name="feedback" rows="5" cols="40"></textarea>
-
-        <br>
-
-        <input id="submit" type="submit" value="Submit" class="submit-button">
+            <br>
+    
+            <textarea id="textarea" name="comments" rows="5" cols="40"></textarea>
+    
+            <br><br>
+    
+            <input id="submit" type="submit" value="Submit" class="submit-button">
         </div>
+    </form>
+
+    <form action="#" method="POST">
+        <h1>Contact Us</h1>
     </form>
 
 </body>
