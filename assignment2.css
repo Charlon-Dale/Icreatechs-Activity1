@@ -14,7 +14,7 @@ form {
   padding: 2.5rem 2.5rem;
   border-radius: 2cm;
   width: 500px;
-  margin: auto;
+  margin: 20px;
 }
 
 .submit-button {
@@ -43,4 +43,5 @@ form {
 
 #title, #description {
   text-align: center;
+  margin-left: 25%;
 }
