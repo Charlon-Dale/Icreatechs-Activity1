@@ -9,6 +9,21 @@
 <body>
     <form action="#" method="POST">
         <h1>Login</h1>
+
+        <label for="username" id="username-label"> 
+            <b>Username:</b>
+        </label>
+        <input id="username" type="text" name="username" placeholder="John Doe" class="form-inputs" required></input>
+
+        <br>
+
+        <label for="password" id="password-label">
+            <b>Password:</b>
+        </label>
+        <input id="password" type="password" name="password" placeholder="Password limit up to 25 characters. Use alphanumeric number" class="form-inputs" required></input>
+        <br><br>
+            <input id="login" type="submit" value="Login" class="submit-button">
+        
     </form>
 
     <h1 id="title"> Benefits of Coding to students </h1>    
@@ -36,7 +51,7 @@
             
             <br>
 
-            <label for="survey"><b>Gender</b></label> 
+            <label for="survey"><b>Gender: </b></label> 
             
             <input id="male" type="radio" id="yes" name="answer" value="Male">
             <label for="male">Male</label>
@@ -44,8 +59,8 @@
             <input id="female" type="radio" id="no" name="answer" value="Female">
             <label for="female">Female</label>
 
-            <input id="survey" type="radio" id="no" name="answer" value="Confidential">
-            <label for="survey">Not to mention</label>
+            <input id="n/a" type="radio" id="no" name="answer" value="Confidential">
+            <label for="n/a">Not to mention</label>
 
             <br><br>
 
@@ -85,13 +100,10 @@
 
         
             <label for="textarea">Comments</label>
-
             <br>
-    
-            <textarea id="textarea" name="comments" rows="10" cols="70">Your comments are important to us. Share your thoughts.</textarea>
+            <textarea id="textarea" name="comments" rows="10" cols="70" placeholder="Your comment is important to us. Share your thoughts here."></textarea>
     
             <br><br>
-    
             <input id="submit" type="submit" value="Submit" class="submit-button">
         </div>
     </form>
